@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM HW</title>
+</head>
+<body>
+    <h1>Products</h1>
+    <ul id="product-list"></ul>
+
+    <script>
+        let products = [
+            { name: "Laptop", price: 999.99, description: "Powerful computing on the go" },
+            { name: "Smartphone", price: 699.99, description: "Stay connected wherever you are" },
+            { name: "Headphones", price: 149.99, description: "Immersive audio experience" }
+        ];
+        // <!-- Task 2: Create a function that will display the products in the array as an unordered list in the browser. -->
+
+        function displayProducts() {
+            let productList = document.getElementById("product-list");
+
+            products.forEach(product => {
+                let listItem = document.createElement("li");
+                listItem.innerHTML = `<strong>${product.name}</strong> - $${product.price} - ${product.description}`;
+                productList.appendChild(listItem);
+            });
+        }
+
+        displayProducts();
+    </script>
+
+<!-- Task 3: Implement an event listener to trigger the display of products when the page loads. -->
+
+    <script>
+        window.addEventListener("load", displayProducts);
+    </script>
+
+</body>
+</html>
