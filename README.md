@@ -66,4 +66,4 @@ Proper display of product information on the webpage using JavaScript.
   GitHub - <h3>[Jedaniels3933/Front_Week_5_Day1_HW](https://github.com/Jedaniels3933/Front_Week_5_Day1_HW)</h3>
 
 
-**This assignment completed as a collaboration between Fellow classmate Tyler Carlisle, username on Github Tcarlisle10.**
+**This assignment completed as a collaboration between myself and fellow classmate Tyler Carlisle, username on Github Tcarlisle10.**
